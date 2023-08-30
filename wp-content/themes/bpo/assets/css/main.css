@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 0.5em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -1em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  text-transform: none;
+  outline: none !important;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+img, picture {
+  line-height: 0;
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+/***********************************************************************************************************************
+**	COLORS VARIABLES
+***********************************************************************************************************************/
+/***********************************************************************************************************************
+**	BREAKPOINT AND WIDTH VARIABLES
+***********************************************************************************************************************/
+/***********************************************************************************************************************
+**	TYPOGRAPHICS
+***********************************************************************************************************************/
+h1 {
+  font-weight: 700;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5384615385;
+  color: #1C2737;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: calc(1168px);
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/***********************************************************************************************************************
+**	MARGINS CLASSES
+***********************************************************************************************************************/
+/***********************************************************************************************************************
+**	WIDTH CLASSES
+***********************************************************************************************************************/
+.img-wrapper {
+  line-height: 0;
+}
+.img-wrapper img, .img-wrapper svg,
+.img-wrapper picture {
+  width: 100%;
+  height: auto;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div > p:first-child {
+  margin-top: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.ws-editor p,
+.ws-editor div,
+.ws-editor ul,
+.text p,
+.text div,
+.text ul {
+  margin-top: 20px;
+}
+.ws-editor ul,
+.text ul {
+  display: inline-block;
+  text-align: left;
+  margin-left: 13px;
+}
+.ws-editor > *:first-child,
+.text > *:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.screen-reader-response {
+  display: none;
+}
+
+/***********************************************************************************************************************
+**	SWIPER BASE STYLES
+***********************************************************************************************************************/

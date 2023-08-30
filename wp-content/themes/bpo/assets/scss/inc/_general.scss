@@ -1,0 +1,83 @@
+%img-wrapper {
+	line-height: 0;
+	img, svg,
+	picture {
+		width: 100%;
+		height: auto;
+	}
+}
+.img-wrapper {
+	@extend %img-wrapper;
+}
+.text-align-left {
+	text-align: left;
+}
+.text-align-center {
+	text-align: center;
+}
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+p {
+	margin-top: 20px;
+}
+a {
+	text-decoration: none;
+}
+div > p:first-child {
+	margin-top: 0;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+.ws-editor,
+.text {
+	p,
+	div,
+	ul {
+		margin-top: 20px;
+	}
+	ul {
+		display: inline-block;
+		text-align: left;
+		margin-left: 13px;
+	}
+	& > *:first-child {
+		margin-top: 0;
+	}
+}
+.desktop-only {
+	@media (max-width: $breakSmall) {
+		display: none;
+
+	}
+}
+.mobile-only {
+	@media (min-width: $breakSmall) {
+		display: none;
+	}
+}
+.screen-reader-response {
+	display: none;
+}
+
+/***********************************************************************************************************************
+**	SWIPER BASE STYLES
+***********************************************************************************************************************/
+.swiper-prev,
+.swiper-next {}
+.swiper-prev {
+
+}
+.swiper-next {
+
+}
+
+.swiper-button-lock {
+
+}
+.swiper-button-disabled {
+
+}

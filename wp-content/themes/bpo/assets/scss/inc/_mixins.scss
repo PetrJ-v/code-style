@@ -1,0 +1,21 @@
+//convert px to vw
+@function vw($value) {
+	// $vwValue: ($value / $maxWidth * 100) + vw;
+	$vwValue: calc(#{$value} / #{$maxWidth} * 100vw);
+	@return $vwValue;
+}
+
+@function vw-m($value) {
+	$vwValue: calc(#{$value} / #{$mobWidth} * 100vw);
+	@return $vwValue;
+}
+
+//hidden scrollbar
+@mixin no-scrollbar {
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow: -moz-scrollbars-none;
+}
